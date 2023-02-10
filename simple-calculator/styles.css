@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+button{
+  border: none;
+  background: none;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  max-width: 300px;
+  width: 350px;
+  padding: 20px;
+  border: 4px solid #af8a75;
+  border-radius: 20px;
+  font-size: 20px;
+  background: #fff;
+}
+
+.result{
+  height: 80px;
+  margin: 10px 20px 0;
+  background: #ff8b4f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  color: #ecc8b6;
+  background-color: #feece2;
+  font-weight: 700;
+  font-size: 22px;
+}
