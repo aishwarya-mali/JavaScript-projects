@@ -24,19 +24,19 @@
   <style>
 
     :root{
-      --space: 10px;
-      --baseColor: pink;
+      --spacing: 10px;
+      --base: pink;
       --blur: 0;
     }
 
     img{
-      padding: var(--space);
-      background: var(--baseColor);
+      padding: var(--spacing);
+      background: var(--base);
       filter: blur(var(--blur));
     }
 
     span{
-      color: var(--baseColor);
+      color: var(--base);
     }
 
     /*
@@ -62,23 +62,13 @@
   </style>
 
   <script>
-    const color = document.getElementById("base")
-    const spacing = document.getElementById("spacing")
-    const blur = document.getElementById("blur")
-    var root = document.querySelector(':root')
+    const root = document.querySelector(':root')
+    const inputs = document.querySelectorAll('.controls input')
 
-    color.addEventListener('input', function(e){
-      root.style.setProperty('--baseColor', e.srcElement.value)
-    })
-
-    spacing.addEventListener('input', function(e){
-      root.style.setProperty('--space', `${e.srcElement.value}px`)
-    })
-
-    blur.addEventListener('input', function(e){
-      console.log(e)
-      root.style.setProperty('--blur', `${e.srcElement.value}px`)
-    })
+    inputs.forEach(input => input.addEventListener('input', function(e){
+      console.log(e.srcElement.id)
+      root.style.setProperty(`--${e.srcElement.id}`, `${e.srcElement.id === 'base' ? e.srcElement.value : `${e.srcElement.value}px`}`)
+    }))
   </script>
 
 </body>
