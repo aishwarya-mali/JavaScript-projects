@@ -34,14 +34,17 @@
 
 - if false it will throw error in second argument
 
-`let num = 10;console.assert(num === 5, "The value of num is not 5");`
+```JavaScript
+let num = 10;
+console.assert(num === 5, "The value of num is not 5");
+```
 
 - The console.assert() method is then used to check if num is equal to 5.
 - Since num is not equal to 5, the assertion fails and the error message "The value of num is not 5" will be displayed in the console.
 
 - `num = 5` The assertion passes since num is equal to 5, so nothing is displayed in the console.
 
-## clearing
+## Clearing
 
 `console.clear()`
 
@@ -49,11 +52,34 @@
 
 - If you want to see all methods and properties of an element
 
-`const p = document.querySelector(p)`
-`console.dir(p)`
+```JavaScript
+const p = document.querySelector(p)
+console.dir(p)
+```
 
 ## Grouping together
 
-## counting
+```JavaScript
+console.group('Sales by Product');
+  salesData.forEach(product => {
+    console.log(`${product.name}: $${product.sales}`);
+  });
+console.groupEnd();
+```
 
-## timing
+- We can use `console.groupCollapsed` so by default they will be collapsed.
+
+## Counting
+
+`console.count('Test')`
+
+## Timing
+
+```JavaScript
+console.time("ExecutionTime");
+for (let i = 0; i < 1000000; i++) {
+  // some time-consuming operation
+}
+console.timeEnd("ExecutionTime");
+```
+`ExecutionTime: 34.7900390625ms`
