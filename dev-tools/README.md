@@ -9,26 +9,36 @@
 
 ## Regular
 
-`console.log('Hello, World!')`
+```JavaScript
+console.log('Hello, World!')
+```
 
 ## Styled
 
-`console.log('%cHello, world!', 'color: blue; font-size: 24px; font-weight: bold;');`
+```JavaScript
+console.log('%cHello, world!', 'color: blue; font-size: 24px; font-weight: bold;');
+```
 
 - In this example, the first argument to console.log() is the message to be logged ('Hello, world!'), and the second argument is a CSS style string ('color: blue; font-size: 24px; font-weight: bold;') that is used to style the message.
 - The %c in the log statement is a special formatting string that tells the console to apply the styles in the second argument to the text that follows. In this case, the text is 'Hello, world!'.
 
 ## Warning
 
-`console.warn('Warning!')`
+```JavaScript
+console.warn('Warning!')
+```
 
 ## Error
 
-`console.error('Error!')`
+```JavaScript
+console.error('Error!')
+```
 
 ## Info
 
-`console.info('Info')`
+```JavaScript
+console.info('Info')
+```
 
 ## Testing
 
@@ -46,7 +56,9 @@ console.assert(num === 5, "The value of num is not 5");
 
 ## Clearing
 
-`console.clear()`
+```JavaScript
+console.clear()
+```
 
 ## Viewing DOM Elements
 
@@ -71,7 +83,12 @@ console.groupEnd();
 
 ## Counting
 
-`console.count('Test')`
+```JavaScript
+console.count('Test')
+console.count('Test')
+console.count('Test')
+console.count('Test')
+```
 
 ## Timing
 
